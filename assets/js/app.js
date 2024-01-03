@@ -1,6 +1,8 @@
 let cl = console.log;
 
 let baseUrl = `https://jsonplaceholder.typicode.com/posts`;
+let photosUrl = `https://jsonplaceholder.typicode.com/photos`;
+
 const postTable = document.getElementById("post-table")
 
 const templating = (arr) =>{
@@ -31,5 +33,7 @@ makeApiCall()
     cl(res)
     templating(res)
 })
+
+
 
 
